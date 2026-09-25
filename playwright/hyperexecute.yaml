@@ -1,0 +1,21 @@
+---
+version: "0.1"
+matrix:
+  os: [win11, linux]
+  methods: ["tests/test1,tests/test2,tests/test2"]
+runson: ${matrix.os}
+report : true
+pre:
+  - npm install
+  - npx playwright install
+cacheKey: '{{ checksum "package-lock.json" }}'
+cacheDirectories:
+  - node_modules
+testSuites:
+  - npx playwright test $methods
+uploadArtifacts:
+    - name: Executed-Job-Artifacts
+      path:
+        - playwright-report/index.html
+
+jobLabel: [playwright, testMuAi]

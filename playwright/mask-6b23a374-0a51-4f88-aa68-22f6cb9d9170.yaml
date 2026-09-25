@@ -1,0 +1,14 @@
+version: "0.1"
+matrix:
+    os: [win11]
+    methods: ['tests/test1']
+runson: ${matrix.os}
+pre:
+    - npm install
+    - npx playwright install
+cacheKey: '{{ checksum "package-lock.json" }}'
+cacheDirectories:
+    - node_modules
+testSuites:
+    - npx playwright test $methods
+jobLabel: [playwright, testMuAi]
