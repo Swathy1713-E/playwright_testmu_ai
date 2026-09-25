@@ -2109,3 +2109,40 @@
 {"level":"info","time":"2026-09-26T03:00:51.547+0530","caller":"terminal/terminal.go:187","msg":"✔ [2]  pre (45s)\n"}
 {"level":"info","time":"2026-09-26T03:00:52.939+0530","caller":"terminal/terminal.go:187","msg":"✔ [3]  cache-download (1s)\n"}
 {"level":"info","time":"2026-09-26T03:01:14.178+0530","caller":"terminal/terminal.go:187","msg":"✔ [2]  npx playwright test tests/test2 (14s)\n"}
+{"level":"info","time":"2026-09-26T03:01:25.748+0530","caller":"terminal/terminal.go:187","msg":"✔ [4]  cache-download (1s)\n"}
+{"level":"info","time":"2026-09-26T03:01:28.979+0530","caller":"terminal/terminal.go:187","msg":"✔ [3]  pre (37s)\n"}
+{"level":"info","time":"2026-09-26T03:01:50.631+0530","caller":"terminal/terminal.go:187","msg":"✔ [3]  npx playwright test tests/test2 (13s)\n"}
+{"level":"info","time":"2026-09-26T03:01:52.089+0530","caller":"terminal/terminal.go:187","msg":"✔ [4]  pre (27s)\n"}
+{"level":"info","time":"2026-09-26T03:01:56.674+0530","caller":"terminal/terminal.go:187","msg":"✔ [5]  cache-download (1s)\n"}
+{"level":"info","time":"2026-09-26T03:02:05.704+0530","caller":"terminal/terminal.go:187","msg":"✔ [4]  npx playwright test tests/test1 (6s)\n"}
+{"level":"info","time":"2026-09-26T03:02:20.227+0530","caller":"terminal/terminal.go:187","msg":"✔ [6]  cache-download (1s)\n"}
+{"level":"info","time":"2026-09-26T03:02:22.788+0530","caller":"terminal/terminal.go:187","msg":"✔ [5]  pre (27s)\n"}
+{"level":"info","time":"2026-09-26T03:02:40.196+0530","caller":"terminal/terminal.go:187","msg":"✔ [5]  npx playwright test tests/test2 (9s)\n"}
+{"level":"info","time":"2026-09-26T03:02:47.429+0530","caller":"terminal/terminal.go:187","msg":"✔ [6]  pre (27s)\n"}
+{"level":"info","time":"2026-09-26T03:03:04.773+0530","caller":"terminal/terminal.go:187","msg":"✔ [6]  npx playwright test tests/test2 (10s)\n"}
+{"level":"debug","time":"2026-09-26T03:03:09.280+0530","caller":"jobmanager/sse_setup.go:134","msg":"\n\nJob status"}
+{"level":"info","time":"2026-09-26T03:03:10.217+0530","caller":"jobmanager/JobSummaryManager.go:54","msg":"\n PARTIALLY COMPLETED \n"}
+{"level":"info","time":"2026-09-26T03:03:10.217+0530","caller":"jobmanager/JobSummaryManager.go:113","msg":"    Test Execution Time:                  2m26s"}
+{"level":"info","time":"2026-09-26T03:03:10.217+0530","caller":"jobmanager/JobSummaryManager.go:113","msg":"    Job Duration Time:                    3m15s"}
+{"level":"info","time":"2026-09-26T03:03:10.217+0530","caller":"jobmanager/JobSummaryManager.go:113","msg":"    Total Tasks:                          6"}
+{"level":"info","time":"2026-09-26T03:03:10.217+0530","caller":"jobmanager/JobSummaryManager.go:113","msg":"    Cumulative Time Consumed:             5m31s"}
+{"level":"info","time":"2026-09-26T03:03:10.217+0530","caller":"jobmanager/JobSummaryManager.go:113","msg":"    Total Stages:                         12"}
+{"level":"info","time":"2026-09-26T03:03:10.218+0530","caller":"jobmanager/JobSummaryManager.go:113","msg":"    Pass discovery stage percentage:      0.00%"}
+{"level":"info","time":"2026-09-26T03:03:10.218+0530","caller":"jobmanager/JobSummaryManager.go:113","msg":"    Failed discovery stage percentage:    0.00%"}
+{"level":"info","time":"2026-09-26T03:03:10.218+0530","caller":"jobmanager/JobSummaryManager.go:113","msg":"    Pass pre stage percentage:            100.00%"}
+{"level":"info","time":"2026-09-26T03:03:10.218+0530","caller":"jobmanager/JobSummaryManager.go:113","msg":"    Failed pre stage percentage:          0.00%"}
+{"level":"info","time":"2026-09-26T03:03:10.218+0530","caller":"jobmanager/JobSummaryManager.go:113","msg":"    Pass test stage percentage:           100.00%"}
+{"level":"info","time":"2026-09-26T03:03:10.218+0530","caller":"jobmanager/JobSummaryManager.go:113","msg":"    Failed test stage percentage:         0.00%"}
+{"level":"info","time":"2026-09-26T03:03:10.218+0530","caller":"jobmanager/JobSummaryManager.go:113","msg":"    Pass post stage percentage:           0.00%"}
+{"level":"info","time":"2026-09-26T03:03:10.218+0530","caller":"jobmanager/JobSummaryManager.go:113","msg":"    Failed post stage percentage:         0.00%"}
+{"level":"info","time":"2026-09-26T03:03:10.218+0530","caller":"jobmanager/JobSummaryManager.go:113","msg":"    Failed Tasks:                         0"}
+{"level":"info","time":"2026-09-26T03:03:10.219+0530","caller":"jobmanager/JobSummaryManager.go:58","msg":""}
+{"level":"debug","time":"2026-09-26T03:03:10.224+0530","caller":"core/lifecycle.go:821","msg":"Context canceled"}
+{"level":"info","time":"2026-09-26T03:03:10.224+0530","caller":"core/lifecycle.go:824","msg":"Stopping pipeline gracefully"}
+{"level":"info","time":"2026-09-26T03:03:10.224+0530","caller":"events/manager.go:338","msg":"context done and stopping SSE"}
+{"level":"info","time":"2026-09-26T03:03:10.225+0530","caller":"jobmanager/manager.go:136","msg":"Job Link: https://hyperexecute.lambdatest.com/hyperexecute/task?jobId=d56fa1d9-a2e2-405b-881c-b81c398f438a\n"}
+{"level":"debug","time":"2026-09-26T03:03:10.225+0530","caller":"events/manager.go:256","msg":"Stopping event manager"}
+{"level":"debug","time":"2026-09-26T03:03:10.225+0530","caller":"core/lifecycle.go:76","msg":"Quit requested from main goroutine...."}
+{"level":"debug","time":"2026-09-26T03:03:10.226+0530","caller":"core/lifecycle.go:77","msg":"Waiting for the goroutines to exit"}
+{"level":"debug","time":"2026-09-26T03:03:10.226+0530","caller":"core/lifecycle.go:80","msg":"All lifecycle goroutines exited"}
+{"level":"debug","time":"2026-09-26T03:03:10.226+0530","caller":"cmd/bin.go:348","msg":"main: all goroutines have finished."}
