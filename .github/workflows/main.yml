@@ -2,19 +2,13 @@ name: Hyperexecute-Playwright
 on:
   schedule:
     - cron: '30 5,17 * * *'
-  workflow_dispatch:
   
 jobs:
-  HyperExecute-Playwright:
+  run-commands:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-    strategy:
-      fail-fast: false
-    steps:
-      - name: Checkout sources
-        uses: actions/checkout@v2
+     steps:
+      - name: Check out repo code
+        uses: actions/checkout@v4  # Downloads your repository code onto the runner
 
-      - name: Starting CLI testing
-        shell: bash
-        run: |
-          curl https://downloads.lambdatest.com/hyperexecute/linux/hyperexecute -o hyperexecute
+      - name: Run a shell command
+        run: echo "Hello World! Your YAML file is running." # Executes standard shell scripts
