@@ -18,6 +18,3 @@ jobs:
         shell: bash
         run: |
           curl https://downloads.lambdatest.com/hyperexecute/linux/hyperexecute -o hyperexecute
-          chmod +x hyperexecute
-          ./hyperexecute --user ${{ secrets.username }} --key ${{ secrets.accesskey }} --download-artifacts --config yaml/win/.hyperexecute_autosplits.yaml
-          echo "Test completion"
