@@ -1,14 +1,23 @@
-name: Hyperexecute-Playwright
+name: Run Hyperexecute Playwright
+
 on:
   schedule:
     - cron: '30 5,17 * * *'
-  
-jobs:
-  run-commands:
-    runs-on: ubuntu-latest
-     steps:
-      - name: Check out repo code
-        uses: actions/checkout@v4  # Downloads your repository code onto the runner
+  workflow_dispatch:
 
-      - name: Run a shell command
-        run: echo "Hello World! Your YAML file is running." # Executes standard shell scripts
+jobs:
+  runHyperexecute:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo code
+        uses: actions/checkout@v4
+
+      - name: Run hyperexecute workflow
+        run: |
+          echo "Running hyperexecute.yaml..."
+          if [ -f myproject/hyperexecute.yaml ]; then
+            bash myproject/hyperexecute.yaml
+          else
+            echo "hyperexecute.yaml not found in myproject/"
+            exit 1
+          fi
