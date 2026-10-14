@@ -13,13 +13,12 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: lts/*
-         config-path: 'playwright/hyperexecute.yaml'
     - name: Install dependencies
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test
+      run: ./hyperexecute --config playwright/hyperexecute.yaml
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
