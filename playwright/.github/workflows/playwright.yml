@@ -13,8 +13,7 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: lts/*
-    - name: Run Local Action YAML
-        uses: ./playwright/hyperexecute.yaml
+         config-path: 'playwright/hyperexecute.yaml'
     - name: Install dependencies
       run: npm ci
     - name: Install Playwright Browsers
